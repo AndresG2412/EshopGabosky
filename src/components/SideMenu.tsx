@@ -39,9 +39,9 @@ const SideMenu: FC<SideBarProps> = ({ isOpen, onClose }) => {
                 </div>
                 <div className='flex flex-col space-y-3.5 font-semibold tracking-wide '>
                     {headerData.map((item) => (
-                        <Link href={item?.href} key={item?.tittle} 
+                        <Link href={item?.href} key={item?.title} 
                         className={`hover:text-shop_light_green hoverEffect ${pathname === item?.href && 'text-white'}`}>
-                            {item?.tittle}
+                            {item?.title}
                         </Link>
                     ))}
                 </div>
