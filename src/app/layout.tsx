@@ -36,9 +36,13 @@ export default function RootLayout({
         <body
           className="font-poppins antialiased bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100"
           >
-          <Header />
-            {children}
-          <Footer />
+          <div className="flex flex-col min-h-screen">
+            <Header />
+              <main className="flex-1">
+                {children}
+              </main>
+            <Footer />
+          </div>
         </body>
       </html>
     </ClerkProvider>
